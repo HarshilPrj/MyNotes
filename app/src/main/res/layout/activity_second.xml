@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black_500"
+    tools:context=".SecondActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/app_name"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        app:titleTextColor="@color/yellow_700"
+        android:elevation="4dp"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_layout"
+        android:padding="10dp"
+        android:layout_margin="4dp"
+        android:textColor="@color/white"
+        android:hint="Notes"
+        android:textColorHint="@color/yellow_700"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_layout"
+        android:padding="10dp"
+        android:layout_margin="4dp"
+        android:hint="Types Notes Here"
+        android:layout_weight="5"
+        android:textColor="@color/white"
+        android:gravity="top"
+        android:textColorHint="@color/yellow_700"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Notes"
+        style="@style/btnstyle"/>
+
+</LinearLayout>
